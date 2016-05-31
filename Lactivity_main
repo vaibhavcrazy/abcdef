@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="@string/username"
+        android:singleLine="true"
+        android:id="@+id/username"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="117dp"
+        android:ems="7"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/password"
+        android:background="@drawable/edit_texts_tyle"
+        android:paddingLeft="20dp"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="@string/password"
+        android:singleLine="true"
+        android:password="true"
+        android:id="@+id/password"
+        android:ems="7"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_texts_tyle"
+        android:paddingLeft="20dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Sign In"
+        android:id="@+id/login"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/edit_texts_tyle"
+        android:padding="10dp"/>
+
+</RelativeLayout>
